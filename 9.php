@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bank Account Simulation</h1>
+    <p>
+<?php
+
+$balance = 1000;
+$deposit = 500;
+$withdraw = 200;
+
+$balance += $deposit;
+$balance -= $withdraw;
+
+echo "Final balance: $balance";
+
+?>
+    </p>
+</body>
+</html>
