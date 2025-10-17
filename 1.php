@@ -13,13 +13,16 @@
     <p>
 <?php
 
-$name = "Cadhla";
-$age = 21;
-$favorite_color = "mauve";
+$name = $_POST['name'];
+$age = $_POST['age'];
+$college = $_POST['college'];
+$color = $_POST['color'];
 
-echo "Hey there, My name is $name, I'm $age years old, and my favorite color is $favorite_color.";
+echo "Hey there $name! Who's $age years old, from $college. 
+Fun fact about you: your favorite color is $color.";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

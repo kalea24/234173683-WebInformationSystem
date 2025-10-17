@@ -13,16 +13,17 @@
     <p>
 <?php
 
-$distance = 200;
-$fuel_consumption = 10;
-$fuel_price = 50;
+$distance = $_POST['distance'];
+$fuel_consumption = $_POST['fuel_consumption'];
+$fuel_price = $_POST['fuel_price'];
 
 $fuel_needed = $distance / $fuel_consumption;
 $cost = $fuel_needed * $fuel_price;
 
-echo "The estimated travel cost for a 200km drive is $cost php";
+echo "The estimated travel cost for a $distance km drive is $cost php";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

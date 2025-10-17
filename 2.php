@@ -13,8 +13,8 @@
     <p>
 <?php
 
-$a = 24;
-$b = 14;
+$a = $_GET['a'];
+$b = $_GET['b'];
 
 $sum = $a + $b;
 $difference = $a - $b;
@@ -28,5 +28,6 @@ echo "Quotient: $quotient<br>";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

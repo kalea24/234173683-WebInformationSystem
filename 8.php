@@ -13,7 +13,7 @@
     <p>
 <?php
 
-$sentence = "The fate of Ophelia by Taylor Swift";
+$sentence = $_POST['sentence'];
 
 $num_characters = strlen($sentence);
 $num_words = str_word_count($sentence);
@@ -27,5 +27,6 @@ echo "Lowercase: $lowercase<br>";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

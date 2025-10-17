@@ -13,9 +13,9 @@
     <p>
 <?php
 
-$balance = 1000;
-$deposit = 500;
-$withdraw = 200;
+$balance = $_POST['balance'];
+$deposit = $_POST['deposit'];
+$withdraw = $_POST['withdraw'];
 
 $balance += $deposit;
 $balance -= $withdraw;
@@ -24,5 +24,6 @@ echo "Final balance: $balance";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

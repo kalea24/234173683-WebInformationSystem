@@ -13,7 +13,7 @@
     <p>
 <?php
 
-$amount_php = 10000;
+$amount_php = $_POST['amount_php'];
 
 $exchange_rate_usd = 0.020;
 $exchange_rate_eur = 0.018;
@@ -30,5 +30,6 @@ echo "JPY $amount_jpy<br>";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

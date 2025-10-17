@@ -13,9 +13,9 @@
     <p>
 <?php
 
-$math_score = 85;
-$english_score = 90;
-$science_score = 88;
+$math_score = $_POST['math_score'];
+$english_score = $_POST['english_score'];
+$science_score = $_POST['science_score'];
 
 $average = ($math_score + $english_score + $science_score) / 3;
 
@@ -36,5 +36,6 @@ echo "Grade: $grade";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

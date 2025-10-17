@@ -13,8 +13,8 @@
     <p>
 <?php
 
-$length = 8;
-$width = 4;
+$length = $_GET['length'];
+$width = $_GET['width'];
 
 $area = $length * $width;
 $perimeter = 2 * ($length + $width);
@@ -24,5 +24,6 @@ echo "Perimeter of the rectangle: $perimeter<br>";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

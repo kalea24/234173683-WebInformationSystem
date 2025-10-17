@@ -13,8 +13,8 @@
     <p>
 <?php
 
-$weight = 52; 
-$height = 1.51; 
+$weight = $_POST['weight'];
+$height = $_POST['height'];
 
 $bmi = $weight / ($height * $height);
 
@@ -22,5 +22,6 @@ echo "BMI: $bmi";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

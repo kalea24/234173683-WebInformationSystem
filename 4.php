@@ -13,7 +13,7 @@
     <p>
 <?php
 
-$celsius = 36;
+$celsius = $_GET['celsius'];
 
 $fahrenheit = ($celsius * 9/5) + 32;
 
@@ -21,5 +21,6 @@ echo "$celsius °C is equal to $fahrenheit °F.";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

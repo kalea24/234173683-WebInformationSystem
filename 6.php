@@ -13,9 +13,9 @@
     <p>
 <?php
 
-$basic_salary = 40000;
-$allowance = 5000;
-$tax = 2000;
+$basic_salary = $_POST['basic_salary'];
+$allowance = $_POST['allowance'];
+$tax = $_POST['tax'];
 
 $net_salary = $basic_salary + $allowance - $tax;
 
@@ -23,5 +23,6 @@ echo "Your net salary is $net_salary";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>

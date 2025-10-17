@@ -13,8 +13,8 @@
     <p>
 <?php
 
-$a = "rawrs";
-$b = "meows";
+$a = $_GET['a'];
+$b = $_GET['b'];
 
 echo "Before swapping:<br> The dog $a, when the cat $b<br>";
 
@@ -26,5 +26,6 @@ echo "After swapping: <br> The dog $a, when the cat $b<br>";
 
 ?>
     </p>
+    <a href="formAction.php">Back to Form</a>
 </body>
 </html>
